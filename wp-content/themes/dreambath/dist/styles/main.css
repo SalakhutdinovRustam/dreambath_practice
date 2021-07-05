@@ -1,0 +1,47 @@
+/* ---------------------
+  Header
+----------------------- */
+
+/* line 4, assets/styles/layouts/sections/_header.scss */
+
+.header {
+  background: #438ad6;
+  -webkit-box-shadow: 0 5px 10px rgba(91, 91, 91, 0.1);
+          box-shadow: 0 5px 10px rgba(91, 91, 91, 0.1);
+}
+
+/* line 9, assets/styles/layouts/sections/_header.scss */
+
+.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  background-image: url(../images/header-bg.jpg);
+  background-size: contain;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 19, assets/styles/layouts/sections/_header.scss */
+
+.bottom-header {
+  height: 100px;
+  background-color: #0c0c3d;
+}
+
+/* line 25, assets/styles/layouts/sections/_header.scss */
+
+.header__logo img {
+  width: 150px;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
