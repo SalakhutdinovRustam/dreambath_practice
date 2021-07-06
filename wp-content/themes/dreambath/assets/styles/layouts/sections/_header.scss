@@ -2,27 +2,120 @@
   Header
 ----------------------- */
 .header {
-  background: rgb(67, 138, 214);
+  background: rgb(132, 168, 207);
   box-shadow: 0 5px 10px rgba(91, 91, 91, 0.1);
 }
 
 .top-header {
   display: flex;
-  height: 300px;
-  background-image: url(images/header-bg.jpg);
-  background-size: contain;
+  height: 21rem;
+  background:
+    url('./../images/confetti.png') top 95% left 0 no-repeat,
+    url('./../images/header-bg.jpg');
+  background-size: cover, auto;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+}
+
+.header_greetings {
+  width: 100%;
+  text-align: center;
+}
+
+.header_form {
+  width: 100%;
+  text-align: center;
 }
 
 .bottom-header {
-  height: 100px;
-  background-color: rgb(12, 12, 61);
+  height: 7rem;
+  background-color: #1a1a4f;
+  padding: 2rem;
 }
 
 .header__logo {
   img {
     width: 150px;
+    margin-top: 80px;
   }
+}
+
+.greetings_enter h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #1a1a4f;
+  margin: 0 auto;
+}
+
+.greetings_numb h2 {
+  font-size: 80px;
+  text-transform: uppercase;
+  margin: -13px auto;
+  white-space: nowrap;
+  color: #1f8bbe;
+}
+
+.greetings_dream h4 {
+  margin: 0 auto;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.header_phone {
+  margin: 10px;
+  position: relative;
+  left: 10rem;
+
+  & a {
+    text-decoration: none;
+    color: #1a1a4f;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.discount {
+  margin-left: 19%;
+}
+
+.discount__countdown {
+  text-align: center;
+}
+
+.countdown__item {
+  margin-bottom: 15px;
+  float: left;
+  //width: 25%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  span {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+
+    &::after {
+      content: ':';
+      color: white;
+
+      &:last-child {
+        content: '';
+      }
+    }
+  }
+
+  p {
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.discount_text p {
+  margin: 0 auto;
+  color: white;
+  font-size: 24px;
 }
