@@ -1,3 +1,16 @@
 //Sections
 @import "layouts/sections/header";
 @import "layouts/sections/footer";
+
+//Components
+@import "components/bootstrap";
+@import "components/font-awesome";
+
+//Common
+@import "common/variables";
+
+// Base
+@import "base/base";
+
+//pages
+@import "layouts/pages/home-page";
