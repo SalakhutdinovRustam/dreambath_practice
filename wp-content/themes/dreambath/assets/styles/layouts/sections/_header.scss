@@ -2,23 +2,21 @@
   Header
 ----------------------- */
 .header {
-  background: rgb(132, 168, 207);
+  background-color: #1a1a4f;
   box-shadow: 0 5px 10px rgba(91, 91, 91, 0.1);
 }
 
-.top-header {
-  display: flex;
-  height: 21rem;
+.top_header {
   background:
     url('./../images/confetti.png') top 95% left 0 no-repeat,
     url('./../images/header-bg.jpg');
   background-size: cover, auto;
-  flex-direction: row;
 }
 
 .header_greetings {
   width: 100%;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .header_form {
@@ -74,7 +72,7 @@
 }
 
 .discount {
-  margin-left: 19%;
+  text-align: center;
 }
 
 .discount__countdown {
@@ -84,7 +82,7 @@
 .countdown__item {
   margin-bottom: 15px;
   float: left;
-  //width: 25%;
+  width: 23%;
 
   &:last-child {
     margin-right: 0;
@@ -99,10 +97,6 @@
     &::after {
       content: ':';
       color: white;
-
-      &:last-child {
-        content: '';
-      }
     }
   }
 
@@ -112,6 +106,10 @@
     font-weight: 500;
     margin: 0;
   }
+}
+
+.countdown__item span:last-child::after {
+  content: '';
 }
 
 .discount_text p {

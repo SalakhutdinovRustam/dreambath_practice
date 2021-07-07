@@ -16,16 +16,17 @@
     
 </head>
 
-<!-- <body <?php body_class(); ?> >
-			<?php wp_body_open(); ?> -->
+<body <?php body_class(); ?> >
+			<?php wp_body_open(); ?>
 
    
    
 			<!-- Header Section Begin -->
 			<header class="header">
+				<div class="top_header">
 						<div class="container">
 								<div class="row">
-								     <div class="top-header ">
+								    <div class="col-lg-6">
 							  		    <div class="header_greetings">
 													<div class="header__logo">
 															<a href="./index.html"><img src="/wp-content/themes/dreambath/assets/images/QA-Logo-Navy.png" alt=""></a>
@@ -43,8 +44,8 @@
 
 														</div>
 													</div>
-										 		
-										
+													</div>
+										<div class="col-lg-6">
 											<div class="header_form">
 								       	<div class="header_phone">
 													 <a href="#">(757)722-bath</a>
@@ -60,18 +61,17 @@
                        		 </div>
                       </div>
 											</div>
-                
-                     </div>
+											</div>
+                     
 										</div>
-
-						
-						
-								 
-										
-						</div>		
+						</div>
+					</div>		
 								
 						
-			</header>
+			
+	<div class="container">
+	 <div class="row">
+		<div class="col-lg-6">
 			<div class="bottom-header">
 				<div class="discount">
 				<div class="discount_text">
@@ -85,4 +85,6 @@
 		  </div>
 		 </div>
 		</div>
+		</div>
+</header>
 				<!-- Header Section End -->
