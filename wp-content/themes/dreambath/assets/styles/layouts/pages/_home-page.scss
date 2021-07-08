@@ -1,8 +1,168 @@
 .base_module {
   background: $background-2;
+  padding: 5rem;
 }
 
 .banner_title {
   color: $white-color;
   padding: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  max-height: 500px;
+}
+
+.rating-result {
+  display: inline-block;
+  font-size: 0;
+}
+
+.rating-result span {
+  padding: 0;
+  font-size: 32px;
+  margin: 0 3px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-result {
+  span::before {
+    content: '★';
+  }
+}
+
+.rating-result {
+  span.active {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+  }
+}
+
+.customer_title {
+  color: $white-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: $white-color;
+  color: black;
+  border: 2px solid #555;
+}
+
+.btn {
+  background-color: #555;
+  color: $white-color;
+}
+
+.customer__item {
+  color: $white-color;
+  text-align: center;
+  margin: 2rem 16rem;
+
+  h5 {
+    text-align: center;
+  }
+
+  p {
+    text-align: right;
+  }
+}
+
+.customer__slider {
+  position: relative;
+
+  .owl-nav {
+    color: $white-color;
+    font-size: 90px;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 33%;
+    z-index: 999;
+  }
+
+  .owl-prev {
+    position: absolute;
+    left: 120px;
+  }
+
+  .owl-next {
+    position: absolute;
+    right: 120px;
+  }
+}
+
+.banner__slider {
+  position: relative;
+
+  .owl-nav {
+    color: rgb(134, 113, 35);
+    font-size: 90px;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 33%;
+    z-index: 999;
+  }
+
+  .owl-prev {
+    position: absolute;
+    left: -20px;
+
+    &::after {
+      content: "";
+      background: #e1e1e1 !important;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      left: -13px;
+      position: absolute;
+      top: 46px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 6px;
+      margin-bottom: 5px;
+      z-index: -10;
+    }
+  }
+
+  .owl-next {
+    position: absolute;
+    right: -20px;
+
+    &::after {
+      content: "";
+      background: #e1e1e1 !important;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      left: -19px;
+      position: absolute;
+      top: 46px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 6px;
+      margin-bottom: 5px;
+      z-index: -10;
+    }
+  }
+}
+
+.support_block {
+  text-align: center;
+
+  .support_title {
+    color: $white-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    background: $background-2;
+    width: 250px;
+  }
 }
