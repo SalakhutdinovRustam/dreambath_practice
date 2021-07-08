@@ -4,7 +4,8 @@
 
 //Components
 @import "components/bootstrap";
-@import "components/font-awesome";
+@import "~font-awesome/scss/font-awesome";
+@import "~owl.carousel/src/scss/owl.carousel";
 
 //Common
 @import "common/variables";
