@@ -72,7 +72,7 @@ if (!empty($customer_slider_data))
     </div>
 		<?php	$button_url = get_field('button_donate');
 			$donate_title = get_field('donate_title');
-	//	var_dump($button_url);
+
 		?>
 		
 		<div class="container">
@@ -95,4 +95,4 @@ if (!empty($customer_slider_data))
 
 <?php 
 get_footer();
-?>
+

@@ -15,11 +15,14 @@
 /* line 9, assets/styles/layouts/sections/_header.scss */
 
 .top_header {
-  background: url(../images/confetti.png) top 95% left 0 no-repeat, url(../images/header-bg.jpg);
+  background: url(../images/confetti.png) top 95% left 0 no-repeat, linear-gradient(173deg, #ffffff36, #e8e2e342), linear-gradient(280deg, #f3f7f91c, #eceae62b), url(../images/header-bg.jpg);
   background-size: cover, auto;
+  position: relative;
+  min-height: 500px;
+  background-blend-mode: hard-light;
 }
 
-/* line 16, assets/styles/layouts/sections/_header.scss */
+/* line 21, assets/styles/layouts/sections/_header.scss */
 
 .header_greetings {
   width: 100%;
@@ -27,14 +30,14 @@
   margin-bottom: 2rem;
 }
 
-/* line 22, assets/styles/layouts/sections/_header.scss */
+/* line 27, assets/styles/layouts/sections/_header.scss */
 
 .header_form {
   width: 100%;
   text-align: center;
 }
 
-/* line 27, assets/styles/layouts/sections/_header.scss */
+/* line 32, assets/styles/layouts/sections/_header.scss */
 
 .bottom-header {
   height: 7rem;
@@ -42,41 +45,41 @@
   padding: 2rem;
 }
 
-/* line 34, assets/styles/layouts/sections/_header.scss */
+/* line 39, assets/styles/layouts/sections/_header.scss */
 
 .header__logo img {
-  width: 150px;
+  width: 200px;
   margin-top: 80px;
 }
 
-/* line 40, assets/styles/layouts/sections/_header.scss */
+/* line 45, assets/styles/layouts/sections/_header.scss */
 
 .greetings_enter h3 {
-  font-size: 36px;
+  font-size: 60px;
   text-transform: uppercase;
   color: #1a1a4f;
   margin: 0 auto;
 }
 
-/* line 47, assets/styles/layouts/sections/_header.scss */
+/* line 52, assets/styles/layouts/sections/_header.scss */
 
 .greetings_numb h2 {
-  font-size: 80px;
+  font-size: 120px;
   text-transform: uppercase;
   margin: -13px auto;
   white-space: nowrap;
   color: #1f8bbe;
 }
 
-/* line 55, assets/styles/layouts/sections/_header.scss */
+/* line 60, assets/styles/layouts/sections/_header.scss */
 
 .greetings_dream h4 {
-  margin: 0 auto;
-  font-size: 22px;
+  text-align: center;
+  font-size: 36px;
   text-transform: uppercase;
 }
 
-/* line 61, assets/styles/layouts/sections/_header.scss */
+/* line 66, assets/styles/layouts/sections/_header.scss */
 
 .header_phone {
   margin: 10px;
@@ -84,7 +87,7 @@
   left: 10rem;
 }
 
-/* line 66, assets/styles/layouts/sections/_header.scss */
+/* line 71, assets/styles/layouts/sections/_header.scss */
 
 .header_phone a {
   text-decoration: none;
@@ -93,19 +96,19 @@
   font-weight: bold;
 }
 
-/* line 74, assets/styles/layouts/sections/_header.scss */
+/* line 79, assets/styles/layouts/sections/_header.scss */
 
 .discount {
   text-align: center;
 }
 
-/* line 78, assets/styles/layouts/sections/_header.scss */
+/* line 83, assets/styles/layouts/sections/_header.scss */
 
 .discount__countdown {
   text-align: center;
 }
 
-/* line 82, assets/styles/layouts/sections/_header.scss */
+/* line 87, assets/styles/layouts/sections/_header.scss */
 
 .countdown__item {
   margin-bottom: 15px;
@@ -113,13 +116,13 @@
   width: 23%;
 }
 
-/* line 87, assets/styles/layouts/sections/_header.scss */
+/* line 92, assets/styles/layouts/sections/_header.scss */
 
 .countdown__item:last-child {
   margin-right: 0;
 }
 
-/* line 91, assets/styles/layouts/sections/_header.scss */
+/* line 96, assets/styles/layouts/sections/_header.scss */
 
 .countdown__item span {
   font-size: 30px;
@@ -128,29 +131,29 @@
   display: inline-block;
 }
 
-/* line 97, assets/styles/layouts/sections/_header.scss */
+/* line 103, assets/styles/layouts/sections/_header.scss */
 
-.countdown__item span::after {
-  content: ':';
-  color: white;
+.countdown__item #wer {
+  padding-left: 25px;
 }
 
-/* line 103, assets/styles/layouts/sections/_header.scss */
+/* line 107, assets/styles/layouts/sections/_header.scss */
 
 .countdown__item p {
   color: white;
   display: inline-block;
   font-weight: 500;
   margin: 0;
+  padding-right: 30px;
 }
 
-/* line 111, assets/styles/layouts/sections/_header.scss */
+/* line 116, assets/styles/layouts/sections/_header.scss */
 
 .countdown__item span:last-child::after {
   content: '';
 }
 
-/* line 115, assets/styles/layouts/sections/_header.scss */
+/* line 120, assets/styles/layouts/sections/_header.scss */
 
 .discount_text p {
   margin: 0 auto;
@@ -158,12 +161,160 @@
   font-size: 24px;
 }
 
+/* line 126, assets/styles/layouts/sections/_header.scss */
+
+.contact__content {
+  background: #f3eeee;
+  position: absolute;
+  width: 500px;
+  z-index: 99;
+}
+
+/* line 132, assets/styles/layouts/sections/_header.scss */
+
+.contact__content h5 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* line 141, assets/styles/layouts/sections/_header.scss */
+
+.contact__content h6 {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* line 148, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .wpcf7-text {
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 158, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .wpcf7-text::-webkit-input-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-text::-moz-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-text::-ms-input-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-text::placeholder {
+  color: #444;
+}
+
+/* line 163, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .wpcf7-textarea {
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #444;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  resize: none;
+}
+
+/* line 175, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .wpcf7-textarea::-webkit-input-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-textarea::-moz-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-textarea::-ms-input-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-textarea::placeholder {
+  color: #444;
+}
+
+/* line 180, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .wpcf7-submit {
+  height: 50px;
+  width: 100%;
+  background: #dc7933;
+  font-size: 24px;
+  color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  resize: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 193, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .wpcf7-submit::-webkit-input-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-submit::-moz-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-submit::-ms-input-placeholder {
+  color: #444;
+}
+
+.contact__content .wpcf7-submit::placeholder {
+  color: #444;
+}
+
+/* line 197, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .wpcf7-submit:hover {
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 202, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .contact__title {
+  background: #1f8bbe;
+  height: 5rem;
+  padding: 1rem;
+}
+
+/* line 208, assets/styles/layouts/sections/_header.scss */
+
+.contact__content .contact__form {
+  padding: 0 1rem 1rem 1rem;
+}
+
 /* line 1, assets/styles/layouts/sections/_footer.scss */
 
 .footer {
   color: aqua;
   background: #1a1a4f;
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem;
 }
 
 /* line 8, assets/styles/layouts/sections/_footer.scss */
@@ -21279,6 +21430,169 @@ body {
 .support_block .btn {
   background: #1f8bbe;
   width: 250px;
+}
+
+/* --------------------------------- Responsive Media Quaries ----------------------------- */
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+  /* line 3, assets/styles/components/media/_responsive.scss */
+
+  .header {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  /* line 9, assets/styles/components/media/_responsive.scss */
+
+  .header {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 15, assets/styles/components/media/_responsive.scss */
+
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* Medium Device = 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 22, assets/styles/components/media/_responsive.scss */
+
+  .greetings_numb h2 {
+    font-size: 90px;
+  }
+
+  /* line 26, assets/styles/components/media/_responsive.scss */
+
+  .contact__content {
+    width: 400px;
+  }
+}
+
+/* Tablet Device = 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 33, assets/styles/components/media/_responsive.scss */
+
+  .top_header {
+    position: static;
+  }
+
+  /* line 37, assets/styles/components/media/_responsive.scss */
+
+  .contact__content {
+    position: static;
+    margin: 1rem auto;
+  }
+
+  /* line 42, assets/styles/components/media/_responsive.scss */
+
+  .customer__item {
+    margin: 2rem 6rem;
+  }
+
+  /* line 47, assets/styles/components/media/_responsive.scss */
+
+  .customer__slider .owl-next {
+    position: absolute;
+    right: 0;
+  }
+
+  /* line 52, assets/styles/components/media/_responsive.scss */
+
+  .customer__slider .owl-prev {
+    position: absolute;
+    left: 0;
+  }
+
+  /* line 58, assets/styles/components/media/_responsive.scss */
+
+  .footer__logo {
+    text-align: center;
+  }
+
+  /* line 62, assets/styles/components/media/_responsive.scss */
+
+  .footer__widget {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1rem;
+    float: none;
+  }
+}
+
+/* Wide Mobile = 480px */
+
+@media only screen and (max-width: 767px) {
+  /* line 72, assets/styles/components/media/_responsive.scss */
+
+  .top_header {
+    position: static;
+  }
+
+  /* line 76, assets/styles/components/media/_responsive.scss */
+
+  .greetings_numb h2 {
+    font-size: 90px;
+  }
+
+  /* line 80, assets/styles/components/media/_responsive.scss */
+
+  .contact__content {
+    position: static;
+    margin: 1rem auto;
+    width: 400px;
+  }
+
+  /* line 86, assets/styles/components/media/_responsive.scss */
+
+  .customer__item {
+    margin: 0;
+  }
+
+  /* line 91, assets/styles/components/media/_responsive.scss */
+
+  .customer__slider .owl-next {
+    position: absolute;
+    right: -2rem;
+    top: 12rem;
+  }
+
+  /* line 97, assets/styles/components/media/_responsive.scss */
+
+  .customer__slider .owl-prev {
+    position: absolute;
+    left: -2rem;
+    top: 12rem;
+  }
+
+  /* line 104, assets/styles/components/media/_responsive.scss */
+
+  .footer__logo {
+    text-align: center;
+  }
+
+  /* line 108, assets/styles/components/media/_responsive.scss */
+
+  .footer__widget {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1rem;
+    float: none;
+  }
 }
 
 
