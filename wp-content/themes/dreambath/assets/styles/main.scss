@@ -4,7 +4,7 @@
 
 //Components
 @import "components/bootstrap";
-@import "~font-awesome/scss/font-awesome";
+@import "components/font-awesome";
 @import "~owl.carousel/src/scss/owl.carousel";
 
 //Common
@@ -15,3 +15,6 @@
 
 //pages
 @import "layouts/pages/home-page";
+
+//media
+@import "components/media/responsive";
